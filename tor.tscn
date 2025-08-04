@@ -6,3 +6,11 @@
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("TorusMesh_6fw6c")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Node3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/CharacterBody3D"]
+
+[node name="Area3D" type="Area3D" parent="Node3D/CharacterBody3D/CollisionShape3D"]
